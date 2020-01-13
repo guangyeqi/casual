@@ -1,0 +1,42 @@
+@function adW($px) {
+    @return 100vw / 1280 * $px;
+}
+
+@function adH($px) {
+    @return 100vh / 720 * $px;
+}
+
+//主体
+.main {
+    //书
+    .m_book {
+        position: absolute;
+        top: adH(49);
+        left: adW(483);
+        width: adW(319);
+        height: adH(451);
+        pointer-events: none;
+    }
+
+    //浪花
+    .m_spray {
+        position: absolute;
+        pointer-events: none;
+
+        //左
+        &.s_left {
+            top: adH(301);
+            left: adW(261);
+            width: adW(262);
+            height: adH(209);
+        }
+
+        //右
+        &.s_right {
+            top: adH(297);
+            left: adW(768);
+            width: adW(258);
+            height: adH(211);
+        }
+    }
+}

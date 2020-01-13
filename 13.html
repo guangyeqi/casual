@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>13</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/13/index.css">
+
+</head>
+
+<body>
+    <!-- 主体 -->
+    <div id="main" class="main">
+        <!-- 背景 -->
+        <img src="img/13/bg.png" alt="背景" class="m_bg">
+        <!-- 时间 -->
+        <div class="m_time">
+            <!-- 表 -->
+            <img src="img/time.png" alt="时钟" class="t_img">{{time}}
+        </div>
+       
+        <!-- 返回 -->
+        <!-- <div class="m_back"> -->
+            <!-- 按钮 -->
+            <!-- <img-btn src="img/13/" name="back" ></img-btn> -->
+        <!-- </div> -->
+
+    </div>
+</body>
+<script src="js/babel.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/httpVueLoader.js"></script>
+<script>
+    var store = new Vue({
+        el: ".main",
+        components: {
+            'img-btn': httpVueLoader('subunit/imgBtn.vue'),
+        },
+        data: {
+            time:'45:38'
+        },
+        methods: {},
+    });
+    console.log(1222222222)
+</script>
+
+</html>

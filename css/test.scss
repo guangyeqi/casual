@@ -1,0 +1,38 @@
+// @mixin allSize-PX($rate) {
+//     .box {
+//         width: 1280px * $rate;
+//     }
+// }
+
+// @media only screen and (min-width: 1281px) {
+//     .box {
+//         background: pink;
+//     }
+//     @include allSize-PX($rate:1960/1280);
+// }
+
+// @media only screen and (max-width: 1280px) {
+//      .box {
+//         background: blue;
+//     }
+
+// }
+
+// @include allSize-PX($rate:(100vw/1280));
+
+$rate:calc((100vh / 720)*720);
+// $rate = /;
+$bg-color: #FFFFFF;
+@function vw($px) {
+    @return (100vw / 1280)*$px;
+
+    // @return ($px / 720) * 100vw;
+}
+.box {
+    // width:$rate;
+    height: vw(720);
+    // height: $rate;
+
+        background: pink;
+
+}

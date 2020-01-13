@@ -1,0 +1,85 @@
+@function adW($px) {
+    @return 100vw / 1280 * $px;
+}
+
+@function adH($px) {
+    @return 100vh / 720 * $px;
+}
+
+//主体
+.main {
+    //时钟
+    .m_time {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: adH(17);
+        left: adW(1118);
+        height: adH(39);
+        pointer-events: none;
+        font-size: 36px;
+        color: #fff;
+        text-shadow: #77171A 2px 0 0, #77171A 0 2px 0, #77171A -2px 0 0, #77171A 0 -2px 0;
+
+        .t_img {
+            margin-right: adW(10);
+
+            // width: adW(40);
+            height: adH(39);
+        }
+    }
+
+    //侧边 按钮
+    .m_asideBtn {
+        position: absolute;
+        top: adH(604);
+        z-index: 9999;
+        width: adW(51);
+        height: adH(71);
+        transform: rotate(-180deg);
+        //左
+        &.a_left {
+            left: 0;
+        }
+        //右
+        &.a_right {
+            right: 0;
+        }
+    }
+    //翻页 按钮
+    .m_pageBtn {
+        position: absolute;
+        top: adH(629);
+        height: adH(57);
+        //左
+        &.p_left {
+            left: adW(100);
+        }
+        //右
+        &.p_right {
+            left: adW(184);
+        }
+    }
+    //
+    .m_areaBtn{
+        position: absolute;
+        bottom: adH(30);
+        width: adW(162);
+        //左
+        &.a_happy {
+            left: adW(274);
+        }
+        //右
+        &.a_point {
+            left: adW(476);
+        }
+        //左
+        &.a_error {
+            left: adW(660);
+        }
+        //右
+        &.a_review {
+            left: adW(852);
+        }
+    }
+}

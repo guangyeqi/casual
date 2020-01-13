@@ -1,0 +1,46 @@
+@function adW($px) {
+    @return 100vw / 1280 * $px;
+}
+@function adH($px) {
+    @return 100vh / 720 * $px;
+}
+//主体
+.main {
+    //时钟
+    .m_time{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top:adH(17);
+        left: adW(1118);
+        height: adH(39);
+        pointer-events: none;
+        font-size: 36px;
+        color: #fff;
+        text-shadow: #77171A 2px 0 0, #77171A 0 2px 0, #77171A -2px 0 0, #77171A 0 -2px 0;
+        .t_img{
+            margin-right: adW(10);
+            // width: adW(40);
+            height: adH(39);
+        }
+    }
+    //船
+    .m_ship{
+        position: absolute;
+        pointer-events: none;
+        //左
+        &.s_left{
+            top:adH(266);
+            left: adW(133);
+            width: adW(153);
+            height: adH(130);
+        }
+        //右
+        &.s_right{
+            top:adH(194);
+            left: adW(1107);
+            width: adW(173);
+            height: adH(61);
+        }
+    }
+}

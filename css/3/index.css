@@ -1,0 +1,27 @@
+.main .m_book {
+  position: absolute;
+  top: 6.80556vh;
+  left: 37.73438vw;
+  width: 24.92188vw;
+  height: 62.63889vh;
+  pointer-events: none;
+}
+
+.main .m_spray {
+  position: absolute;
+  pointer-events: none;
+}
+
+.main .m_spray.s_left {
+  top: 41.80556vh;
+  left: 20.39062vw;
+  width: 20.46875vw;
+  height: 29.02778vh;
+}
+
+.main .m_spray.s_right {
+  top: 41.25vh;
+  left: 60vw;
+  width: 20.15625vw;
+  height: 29.30556vh;
+}

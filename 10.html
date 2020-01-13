@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>10</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/10/index.css">
+
+</head>
+
+<body>
+    <!-- 主体 -->
+    <div id="main" class="main">
+        <!-- 背景 -->
+        <img src="img/10/bg.png" alt="背景" class="m_bg">
+        <!-- 时间 -->
+        <div class="m_time">
+            <!-- 表 -->
+            <img src="img/time.png" alt="时钟" class="t_img">{{time}}
+        </div>
+        <!-- 侧边左按钮 -->
+        <img-btn class="m_asideBtn a_left" src="img/" name="aside_left" @onclick="aside"></img-btn>
+        <!-- 侧边右按钮 -->
+        <img-btn class="m_asideBtn a_right" src="img/" name="aside_right" @onclick="aside"></img-btn>
+        <!-- 翻页左按钮 -->
+        <img-btn class="m_pageBtn p_left" src="img/10/" name="page_left" @onclick="page"></img-btn>
+        <!-- 翻页右按钮 -->
+        <img-btn class="m_pageBtn p_right" src="img/10/" name="page_right" @onclick="page"></img-btn>
+        <!-- 快乐识字 -->
+        <img-btn class="m_areaBtn a_happy" :canclick="happy" src="img/10/" name="happy" @onclick="area"></img-btn>
+        <!-- 注意要点 -->
+        <img-btn class="m_areaBtn a_point" :canclick="point" src="img/10/" name="point" @onclick="area"></img-btn>
+        <!-- 错误示例 -->
+        <img-btn class="m_areaBtn a_error" :canclick="error" src="img/10/" name="error" @onclick="area"></img-btn>
+        <!-- 复习回顾 -->
+        <img-btn class="m_areaBtn a_review" :canclick="review" src="img/10/" name="review" @onclick="area"></img-btn>
+
+    </div>
+</body>
+<script src="js/babel.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/httpVueLoader.js"></script>
+<script>
+    var store = new Vue({
+        el: ".main",
+        components: {
+            'img-btn': httpVueLoader('subunit/imgBtn.vue'),
+        },
+        data: {
+            time: '45:38',
+            happy: true,
+            point: true,
+            error: false,
+            review: true
+        },
+        methods: {
+            aside(e) {
+                console.log('aside', e)
+            },
+            page(e) {
+                console.log('page', e)
+            },
+            area(e) {
+                console.log('area', e)
+            },
+            hover() {
+                console.log(11)
+            }
+        },
+    });
+</script>
+
+</html>

@@ -1,0 +1,36 @@
+.main .m_time {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 2.36111vh;
+  left: 87.34375vw;
+  height: 5.41667vh;
+  pointer-events: none;
+  font-size: 36px;
+  color: #fff;
+  text-shadow: #77171A 2px 0 0, #77171A 0 2px 0, #77171A -2px 0 0, #77171A 0 -2px 0;
+}
+
+.main .m_time .t_img {
+  margin-right: 0.78125vw;
+  height: 5.41667vh;
+}
+
+.main .m_ship {
+  position: absolute;
+  pointer-events: none;
+}
+
+.main .m_ship.s_left {
+  top: 36.94444vh;
+  left: 10.39062vw;
+  width: 11.95312vw;
+  height: 18.05556vh;
+}
+
+.main .m_ship.s_right {
+  top: 26.94444vh;
+  left: 86.48438vw;
+  width: 13.51562vw;
+  height: 8.47222vh;
+}

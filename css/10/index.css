@@ -1,0 +1,70 @@
+.main .m_time {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 2.36111vh;
+  left: 87.34375vw;
+  height: 5.41667vh;
+  pointer-events: none;
+  font-size: 36px;
+  color: #fff;
+  text-shadow: #77171A 2px 0 0, #77171A 0 2px 0, #77171A -2px 0 0, #77171A 0 -2px 0;
+}
+
+.main .m_time .t_img {
+  margin-right: 0.78125vw;
+  height: 5.41667vh;
+}
+
+.main .m_asideBtn {
+  position: absolute;
+  top: 83.88889vh;
+  z-index: 9999;
+  width: 3.98438vw;
+  height: 9.86111vh;
+  transform: rotate(-180deg);
+}
+
+.main .m_asideBtn.a_left {
+  left: 0;
+}
+
+.main .m_asideBtn.a_right {
+  right: 0;
+}
+
+.main .m_pageBtn {
+  position: absolute;
+  top: 87.36111vh;
+  height: 7.91667vh;
+}
+
+.main .m_pageBtn.p_left {
+  left: 7.8125vw;
+}
+
+.main .m_pageBtn.p_right {
+  left: 14.375vw;
+}
+
+.main .m_areaBtn {
+  position: absolute;
+  bottom: 4.16667vh;
+  width: 12.65625vw;
+}
+
+.main .m_areaBtn.a_happy {
+  left: 21.40625vw;
+}
+
+.main .m_areaBtn.a_point {
+  left: 37.1875vw;
+}
+
+.main .m_areaBtn.a_error {
+  left: 51.5625vw;
+}
+
+.main .m_areaBtn.a_review {
+  left: 66.5625vw;
+}

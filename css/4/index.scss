@@ -1,0 +1,37 @@
+@function adW($px) {
+    @return 100vw / 1280 * $px;
+}
+@function adH($px) {
+    @return 100vh / 720 * $px;
+}
+//主体
+.main {
+    //阳光
+    .m_light{
+        position: absolute;
+        top:adH(0);
+        left: adW(410);
+        width: adW(882);
+        height: adH(720);
+        pointer-events: none;
+    }
+    //船
+    .m_ship{
+        position: absolute;
+        pointer-events: none;
+        //左
+        &.s_left{
+            top:adH(266);
+            left: adW(133);
+            width: adW(153);
+            height: adH(130);
+        }
+        //右
+        &.s_right{
+            top:adH(194);
+            left: adW(1107);
+            width: adW(173);
+            height: adH(61);
+        }
+    }
+}

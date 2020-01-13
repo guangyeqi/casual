@@ -1,0 +1,27 @@
+.main .m_light {
+  position: absolute;
+  top: 0vh;
+  left: 32.03125vw;
+  width: 68.90625vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.main .m_ship {
+  position: absolute;
+  pointer-events: none;
+}
+
+.main .m_ship.s_left {
+  top: 36.94444vh;
+  left: 10.39062vw;
+  width: 11.95312vw;
+  height: 18.05556vh;
+}
+
+.main .m_ship.s_right {
+  top: 26.94444vh;
+  left: 86.48438vw;
+  width: 13.51562vw;
+  height: 8.47222vh;
+}
