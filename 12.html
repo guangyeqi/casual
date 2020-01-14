@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>12</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/12/index.css">
+
+</head>
+
+<body>
+    <!-- 主体 -->
+    <div id="main" class="main">
+        <!-- 浮层 -->
+        <div class="m_float">
+            <!-- top -->
+            <img src="img/12/top.png" alt="top" class="g_top">
+            <!-- box -->
+            <div class="g_box">
+                <img src="img/12/box.png" alt="box" class="b_img">
+                <!-- 内容 -->
+                <div class="b_info">
+                    <div class="i_top">
+                        <div class="t_0"></div>
+                        <img src="img/12/line.png" alt="" class="t_line">
+                        <div class="t_0"></div>
+                        <img src="img/12/line.png" alt="" class="t_line">
+                        <div class="t_1"></div>
+                        <img src="img/12/line.png" alt="" class="t_line">
+                        <div class="t_2"></div>
+                        <img src="img/12/line.png" alt="" class="t_line">
+                        <div class="t_3"></div>
+                        <img src="img/12/line.png" alt="" class="t_line">
+                    </div>
+                    <div class="i_bottom">
+                        张三
+                        <template v-for="(item,index) in 7">
+                            <div class="b_good"></div>
+                        </template>
+                        <template v-for="(item,index) in 3">
+                            <div class="b_bad b_1"></div>
+                        </template>
+                        <template v-for="(item,index) in 3">
+                            <div class="b_bad b_2"></div>
+                        </template>
+                        <span class="b_txt">7/130</span>
+                    </div>
+                </div>
+            </div>
+            <!-- top -->
+            <img src="img/12/bottom.png" alt="bottom" class="g_bottom">
+            <!-- part -->
+            <img src="img/12/part.png" alt="bottom" class="g_part">
+        </div>
+    </div>
+</body>
+<script src="js/babel.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/httpVueLoader.js"></script>
+<script>
+    var store = new Vue({
+        el: ".main",
+        components: {
+            'img-btn': httpVueLoader('subunit/imgBtn.vue'),
+            'img-bg-btn': httpVueLoader('subunit/imgBgBtn.vue'),
+            'gift': httpVueLoader('subunit/gift.vue'),
+
+
+        },
+        data: {
+
+        },
+        methods: {
+            back(e) {
+                console.log('back', e)
+            },
+            aside(e) {
+                console.log('aside', e)
+
+            },
+            click(e) {
+                console.log('click', e)
+            }
+        },
+    });
+</script>
+
+</html>

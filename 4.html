@@ -23,11 +23,19 @@
         <!-- 船 右 -->
         <img src="img/4/ship_right.png" alt="船" class="m_ship s_right">
         <!-- 返回 -->
-        <div class="m_back">
-            <!-- 按钮 -->
-            <img-btn src="img/4/" name="back" ></img-btn>
-        </div>
-
+        <img-bg-btn class="m_back" src="img/4/back.png" height=53 name="back" @onclick="back"></img-bg-btn>
+        <!-- 侧边 -->
+        <img-bg-btn class="m_aside" src="img/4/aside.png" height=104 name="aside" @onclick="aside"></img-bg-btn>
+        <!-- 放映岛 -->
+        <img-bg-btn class="m_item i_0" src="img/4/0.png" height=174 name="0" @onclick="click"></img-bg-btn><!-- 放映岛 -->
+        <!-- 教学岛 -->
+        <img-bg-btn class="m_item i_1" src="img/4/1.png" height=174 name="1" @onclick="click"></img-bg-btn><!-- 放映岛 -->
+        <!-- 三姿示范 -->
+        <img-bg-btn class="m_item i_2" src="img/4/2.png" height=174 name="2" @onclick="click"></img-bg-btn><!-- 放映岛 -->
+        <!-- 回忆屋 -->
+        <img-bg-btn class="m_item i_3" src="img/4/3.png" height=174 name="3" @onclick="click"></img-bg-btn><!-- 放映岛 -->
+        <!-- 基本笔画 -->
+        <img-bg-btn class="m_item i_4" src="img/4/4.png" height=174 name="4" @onclick="click"></img-bg-btn>
     </div>
 </body>
 <script src="js/babel.min.js"></script>
@@ -38,11 +46,26 @@
         el: ".main",
         components: {
             'img-btn': httpVueLoader('subunit/imgBtn.vue'),
+            'img-bg-btn': httpVueLoader('subunit/imgBgBtn.vue'),
+            'gift': httpVueLoader('subunit/gift.vue'),
+
+
         },
         data: {
 
         },
-        methods: {},
+        methods: {
+            back(e) {
+                console.log('back', e)
+            },
+            aside(e) {
+                console.log('aside', e)
+
+            },
+            click(e) {
+                console.log('click', e)
+            }
+        },
     });
 </script>
 

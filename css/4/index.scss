@@ -1,37 +1,92 @@
 @function adW($px) {
     @return 100vw / 1280 * $px;
 }
+
 @function adH($px) {
     @return 100vh / 720 * $px;
 }
+
 //主体
 .main {
     //阳光
-    .m_light{
+    .m_light {
         position: absolute;
-        top:adH(0);
+        top: adH(0);
         left: adW(410);
         width: adW(882);
         height: adH(720);
         pointer-events: none;
     }
+
     //船
-    .m_ship{
+    .m_ship {
         position: absolute;
         pointer-events: none;
+
         //左
-        &.s_left{
-            top:adH(266);
+        &.s_left {
+            top: adH(266);
             left: adW(133);
             width: adW(153);
             height: adH(130);
         }
+
         //右
-        &.s_right{
-            top:adH(194);
+        &.s_right {
+            top: adH(194);
             left: adW(1107);
             width: adW(173);
             height: adH(61);
+        }
+    }
+
+    //返回
+    .m_back {
+        position: absolute;
+        top: adH(662);
+        left: adW(1148);
+        width: adW(127);
+        height: adH(53);
+    }
+
+    //侧边
+    .m_aside {
+        position: absolute;
+        z-index: 9999;
+        top: adH(604);
+        left: 0;
+        width: adW(75);
+        height: adH(104);
+    }
+
+    .m_item {
+        position: absolute;
+        width: adW(165);
+        height: adH(174);
+
+        &.i_0 {
+            top: adH(472);
+            left: adW(74);
+        }
+
+        &.i_1 {
+            top: adH(334);
+            left: adW(397);
+        }
+
+        &.i_2 {
+            top: adH(450);
+            left: adW(687);
+        }
+
+        &.i_3 {
+            top: adH(247);
+            left: adW(812);
+        }
+
+        &.i_4 {
+            top: adH(375);
+            left: adW(1054);
         }
     }
 }

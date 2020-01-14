@@ -1,0 +1,99 @@
+@function adW($px) {
+    @return 100vw / 1280 * $px;
+}
+
+@function adH($px) {
+    @return 100vh / 720 * $px;
+}
+
+//主体
+.main {}
+
+.m_float {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.6);
+
+    .g_top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 98;
+        margin: 0 auto;
+        width: adW(927);
+    }
+
+    .g_box {
+        position: absolute;
+        top: adH(35);
+        left: 0;
+        right: 0;
+        z-index: 97;
+        margin: 0 auto;
+        width: adW(1203);
+
+        .b_img {
+            width: 100%;
+        }
+
+        .b_info {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            .i_top{
+                margin: 0 auto;
+                width: adW(1067);
+                height: adH(442);
+            }
+
+            .i_bottom {
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                width: adW(848);
+                font-size: 25px;
+                .b_good {
+                    display: inline-block;
+                    width: adW(53);
+                    height: adH(48);
+                    background: url("/img/12/good.png") no-repeat 0 -96px;
+                }
+                .b_bad {
+                    display: inline-block;
+                    width: adW(45);
+                    height: adH(48);
+                    background: url("/img/12/bad.png") no-repeat 0 -48px;
+                    &.b_1 {
+                        background: url("/img/12/bad.png") no-repeat 0 -96px;
+                    }
+                }
+            }
+        }
+    }
+
+    .g_bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 98;
+        margin: 0 auto;
+        width: adW(325);
+    }
+
+    .g_part {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 98;
+        width: adW(300);
+    }
+}

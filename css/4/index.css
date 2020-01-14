@@ -25,3 +25,51 @@
   width: 13.51562vw;
   height: 8.47222vh;
 }
+
+.main .m_back {
+  position: absolute;
+  top: 91.94444vh;
+  left: 89.6875vw;
+  width: 9.92188vw;
+  height: 7.36111vh;
+}
+
+.main .m_aside {
+  position: absolute;
+  z-index: 9999;
+  top: 83.88889vh;
+  left: 0;
+  width: 5.85938vw;
+  height: 14.44444vh;
+}
+
+.main .m_item {
+  position: absolute;
+  width: 12.89062vw;
+  height: 24.16667vh;
+}
+
+.main .m_item.i_0 {
+  top: 65.55556vh;
+  left: 5.78125vw;
+}
+
+.main .m_item.i_1 {
+  top: 46.38889vh;
+  left: 31.01562vw;
+}
+
+.main .m_item.i_2 {
+  top: 62.5vh;
+  left: 53.67188vw;
+}
+
+.main .m_item.i_3 {
+  top: 34.30556vh;
+  left: 63.4375vw;
+}
+
+.main .m_item.i_4 {
+  top: 52.08333vh;
+  left: 82.34375vw;
+}

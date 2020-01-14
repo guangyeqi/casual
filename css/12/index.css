@@ -1,0 +1,92 @@
+.m_float {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.m_float .g_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 98;
+  margin: 0 auto;
+  width: 72.42188vw;
+}
+
+.m_float .g_box {
+  position: absolute;
+  top: 4.86111vh;
+  left: 0;
+  right: 0;
+  z-index: 97;
+  margin: 0 auto;
+  width: 93.98438vw;
+}
+
+.m_float .g_box .b_img {
+  width: 100%;
+}
+
+.m_float .g_box .b_info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.m_float .g_box .b_info .i_top {
+  margin: 0 auto;
+  width: 83.35938vw;
+  height: 61.38889vh;
+}
+
+.m_float .g_box .b_info .i_bottom {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 66.25vw;
+  font-size: 25px;
+}
+
+.m_float .g_box .b_info .i_bottom .b_good {
+  display: inline-block;
+  width: 4.14062vw;
+  height: 6.66667vh;
+  background: url("/img/12/good.png") no-repeat 0 -96px;
+}
+
+.m_float .g_box .b_info .i_bottom .b_bad {
+  display: inline-block;
+  width: 3.51562vw;
+  height: 6.66667vh;
+  background: url("/img/12/bad.png") no-repeat 0 -48px;
+}
+
+.m_float .g_box .b_info .i_bottom .b_bad.b_1 {
+  background: url("/img/12/bad.png") no-repeat 0 -96px;
+}
+
+.m_float .g_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 98;
+  margin: 0 auto;
+  width: 25.39062vw;
+}
+
+.m_float .g_part {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 98;
+  width: 23.4375vw;
+}
