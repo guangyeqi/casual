@@ -1,0 +1,159 @@
+.main .m_time {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 2.36111vh;
+  left: 87.34375vw;
+  height: 5.41667vh;
+  pointer-events: none;
+  font-size: 36px;
+  color: #fff;
+  text-shadow: #77171A 2px 0 0, #77171A 0 2px 0, #77171A -2px 0 0, #77171A 0 -2px 0;
+}
+
+.main .m_time .t_img {
+  margin-right: 0.78125vw;
+  height: 5.41667vh;
+}
+
+.main .m_asideBtn {
+  position: absolute;
+  top: 87.91667vh;
+  z-index: 9999;
+  width: 3.98438vw;
+  height: 9.86111vh;
+  transform: rotate(-180deg);
+}
+
+.main .m_asideBtn.a_left {
+  left: 0;
+}
+
+.main .m_asideBtn.a_right {
+  right: 0;
+}
+
+.main .m_pageBtn {
+  position: absolute;
+  top: 90.83333vh;
+  height: 7.36111vh;
+}
+
+.main .m_pageBtn.p_left {
+  left: 7.8125vw;
+}
+
+.main .m_pageBtn.p_right {
+  left: 14.375vw;
+}
+
+.main .m_areaBtn {
+  position: absolute;
+  top: 91.52778vh;
+  width: 10vw;
+}
+
+.main .m_areaBtn.a_happy {
+  left: 23.75vw;
+}
+
+.main .m_areaBtn.a_point {
+  left: 35.3125vw;
+}
+
+.main .m_areaBtn.a_error {
+  left: 47.03125vw;
+}
+
+.main .m_areaBtn.a_write {
+  left: 58.75vw;
+}
+
+.main .m_areaBtn.a_review {
+  left: 70.39062vw;
+}
+
+.m_11 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.m_11 .m_video {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.m_11 .m_video .v_txt {
+  margin-top: 0.78125vw;
+  margin-right: 2.1875vw;
+  width: 3.20312vw;
+  height: 6.25vh;
+  font-size: 36px;
+}
+
+.m_11 .m_video video {
+  width: 21.79688vw;
+  height: 38.75vh;
+  background: #000;
+}
+
+.m_11 .m_video.m_0 {
+  top: 1.95312vw;
+  left: 8.19444vh;
+}
+
+.m_11 .m_video.m_1 {
+  top: 1.95312vw;
+  left: 63.75vh;
+}
+
+.m_11 .m_video.m_2 {
+  top: 1.95312vw;
+  left: 119.30556vh;
+}
+
+.m_11 .m_video.m_3 {
+  top: 26.95312vw;
+  left: 8.19444vh;
+}
+
+.m_11 .m_video.m_4 {
+  top: 26.95312vw;
+  left: 63.75vh;
+}
+
+.m_11 .m_video.m_5 {
+  top: 26.95312vw;
+  left: 119.30556vh;
+}
+
+.m_six {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.m_six .s_logo {
+  position: absolute;
+  top: 6.52778vh;
+  left: 1.48438vw;
+  width: 22.1875vw;
+  height: 26.94444vh;
+}
+
+.m_six .s_shuang {
+  position: absolute;
+  top: 31.80556vh;
+  left: 15.54688vw;
+  width: 14.84375vw;
+  height: 8.33333vh;
+  background: url("/img/6/6/line.png");
+  text-align: center;
+  line-height: 6.94444vh;
+  font-size: 32px;
+}
