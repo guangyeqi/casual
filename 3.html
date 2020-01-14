@@ -22,11 +22,13 @@
         <img src="img/3/spray_left.png" alt="浪花" class="m_spray s_left">
         <!-- 浪花 右 -->
         <img src="img/3/spray_right.png" alt="浪花" class="m_spray s_right">
-        <!-- 返回 -->
-        <!-- <div class="m_back"> -->
-            <!-- 按钮 -->
-            <!-- <img-btn src="img/3/" name="back" ></img-btn> -->
-        <!-- </div> -->
+        <!-- 返回按钮 -->
+        <img-bg-btn class="m_back" src="img/3/back.png" height=53 name="back" @onclick="back"></img-bg-btn>
+        <!-- 螃蟹 -->
+        <template v-for="(item,inde) in list">
+            <img-bg-btn v-if="item.type" :class="['m_crab', 'c_gold','c_'+item.id]" src="img/3/crab_gold.png" height=125 :name="item" @onclick="back">{{item.id}}</img-bg-btn>
+            <img-bg-btn v-else :class="['m_crab', 'c_pink','c_'+item.id]" src="img/3/crab_pink.png" height=72 :name="item" @onclick="back">{{item.id}}</img-bg-btn>
+        </template>
 
     </div>
 </body>
@@ -38,11 +40,64 @@
         el: ".main",
         components: {
             'img-btn': httpVueLoader('subunit/imgBtn.vue'),
+            'img-bg-btn': httpVueLoader('subunit/imgBgBtn.vue'),
         },
         data: {
-
+            list: [
+                {
+                    id: 1,
+                    type: 0
+                },
+                {
+                    id: 2,
+                    type: 0
+                }, {
+                    id: 3,
+                    type: 0
+                }, {
+                    id: 4,
+                    type: 0
+                }, {
+                    id: 5,
+                    type: 0
+                }, {
+                    id: 6,
+                    type: 0
+                }, {
+                    id: 7,
+                    type: 0
+                }, {
+                    id: 8,
+                    type: 1
+                }, {
+                    id: 9,
+                    type: 0
+                }, {
+                    id: 10,
+                    type: 0
+                }, {
+                    id: 11,
+                    type: 0
+                }, {
+                    id: 12,
+                    type: 0
+                }, {
+                    id: 13,
+                    type: 0
+                }, {
+                    id: 14,
+                    type: 0
+                }, {
+                    id: 15,
+                    type: 0
+                },
+            ]
         },
-        methods: {},
+        methods: {
+            back(e) {
+                console.log('back', e);
+            }
+        },
     });
     console.log(1222222222)
 </script>

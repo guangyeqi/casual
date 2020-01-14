@@ -25,3 +25,74 @@
   width: 20.15625vw;
   height: 29.30556vh;
 }
+
+.main .m_back {
+  position: absolute;
+  top: 91.94444vh;
+  left: 89.6875vw;
+  z-index: 99;
+  width: 9.92188vw;
+  height: 7.36111vh;
+}
+
+.main .m_crab {
+  position: absolute;
+  top: 77.77778vh;
+  left: 0;
+}
+
+.main .m_crab.c_gold {
+  width: 13.51562vw;
+  height: 17.36111vh;
+}
+
+.main .m_crab.c_pink {
+  width: 9.6875vw;
+  height: 10vh;
+}
+
+.main .m_crab.c_1 {
+  top: 77.77778vh;
+  left: 1.875vw;
+}
+
+.main .m_crab.c_2 {
+  left: 11.01562vw;
+}
+
+.main .m_crab.c_3 {
+  left: 20.3125vw;
+}
+
+.main .m_crab.c_4 {
+  left: 29.60938vw;
+}
+
+.main .m_crab.c_5 {
+  left: 38.75vw;
+}
+
+.main .m_crab.c_6 {
+  left: 48.04688vw;
+}
+
+.main .m_crab.c_7 {
+  left: 57.34375vw;
+}
+
+.main .m_crab.c_8 {
+  top: 73.47222vh;
+  left: 67.5vw;
+}
+
+.main .m_crab.c_9 {
+  left: 11.01562vw;
+}
+
+.main .m_crab.c_10 {
+  left: 11.01562vw;
+}
+
+.main .m_crab.c_11 {
+  left: 11.01562vw;
+}

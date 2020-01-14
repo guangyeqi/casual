@@ -39,4 +39,76 @@
             height: adH(211);
         }
     }
+
+    //返回按钮
+    .m_back {
+        position: absolute;
+        top: adH(662);
+        left: adW(1148);
+        z-index: 99;
+        width: adW(127);
+        height: adH(53);
+    }
+
+    .m_crab {
+        position: absolute;
+        top: adH(560);
+        left: 0;
+
+        &.c_gold {
+            width: adW(173);
+            height: adH(125);
+        }
+
+        &.c_pink {
+            width: adW(124);
+            height: adH(72);
+        }
+
+        &.c_1 {
+            top: adH(560);
+            left: adW(24);
+        }
+
+        &.c_2 {
+            left: adW(141);
+        }
+
+        &.c_3 {
+            left: adW(260);
+        }
+
+        &.c_4 {
+            left: adW(379);
+        }
+
+        &.c_5 {
+            left: adW(496);
+        }
+
+        &.c_6 {
+            left: adW(615);
+        }
+
+        &.c_7 {
+            left: adW(734);
+        }
+
+        &.c_8 {
+            top: adH(529);
+            left: adW(864);
+        }
+
+        &.c_9 {
+            left: adW(141);
+        }
+
+        &.c_10 {
+            left: adW(141);
+        }
+
+        &.c_11 {
+            left: adW(141);
+        }
+    }
 }
